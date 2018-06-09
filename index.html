@@ -48,7 +48,7 @@
 		// Check for running exported on file protocol
 		if (window.location.protocol.substr(0, 4) === "file")
 		{
-			//alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
 		}
 	})();
 	</script>
@@ -65,9 +65,9 @@
 
     <script>
 		// Size the canvas to fill the browser viewport.
-		jQuery(window).resize(function() {
+	/*	jQuery(window).resize(function() {
 			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
-		});
+		});   */
 		
 		// Start the Construct 2 project running on window load.
 		jQuery(document).ready(function ()
